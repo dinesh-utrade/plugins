@@ -122,7 +122,7 @@
   NSError *authError = nil;
   self.lastCallArgs = nil;
   self.lastResult = nil;
-  context.localizedFallbackTitle = @"";
+  context.localizedFallbackTitle = @"Enter passcode";
 
   if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
                            error:&authError]) {
@@ -146,7 +146,7 @@
   NSError *authError = nil;
   _lastCallArgs = nil;
   _lastResult = nil;
-  context.localizedFallbackTitle = @"";
+  context.localizedFallbackTitle = @"Enter passcode";
 
   if (@available(iOS 9.0, *)) {
     if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&authError]) {
